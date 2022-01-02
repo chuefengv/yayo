@@ -1,13 +1,33 @@
-.app-wrapper{
-    position: relative;
+.app-container{
+    display: grid;
 }
-.video-wrapper{
+
+.video-container{
+    height: 100vh;
+    position: relative;
     video{
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100vh;
+        z-index: -1;
+        height: 100%;
         width: 100%;
         object-fit: cover;
+    }
+
+    .video-transparent-layer{
+        z-index: 1;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.15);
+    }
+
+    .video-text{
+        z-index: 2;
+        position: absolute;
+        top:40%;
+        left: 0;
+        right: 0;
+        text-align: center;
+        color: white;
     }
 }
