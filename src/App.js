@@ -4,14 +4,12 @@ import React,{useState} from 'react'
 import ModalVideo from 'react-modal-video'
 import './modal-video.css'
 import {projects} from './Projects'
+import { Icon } from '@iconify/react';
 
 function App() {
 
   const [isOpen, setOpen] = useState(false)
   const [videoId, setVideoId] = useState(" ")
-
-
-  
 
   function openPlayer(video_id){
     setVideoId(video_id)
@@ -53,7 +51,17 @@ function App() {
       </div>
 
       <div className='footer-container'>
-        footers
+        <h4>REACH OUT</h4>
+        <p>YAYO VANG</p>
+        <p>BROOKLYN, NEW YORK</p>
+        <div className='footer-contacts'>
+          <a href='https://www.instagram.com/yayovang/'>
+            <Icon icon="akar-icons:instagram-fill" className='contact-icon'/>
+          </a>
+          <a href='mailto:yayo.vang@gmail.com'>
+            <Icon icon="fontisto:email" className='contact-icon'/>
+          </a>
+        </div>
       </div>
     </div>
   );

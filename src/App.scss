@@ -6,6 +6,10 @@ html{
 
 body{
     background-color: black;
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
 }
 .app-container{
     display: grid;
@@ -54,10 +58,6 @@ body{
             justify-self: center;
             cursor: pointer;
         }
-        a{
-            text-decoration: none;
-            color: inherit;
-        }
     }
 }
 
@@ -72,6 +72,27 @@ body{
         img{
             width: 100%;
             margin: 5px;
+            cursor: pointer;
         }
     }
+}
+
+.footer-container{
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    h4{
+        margin: 10px;
+    }
+    p{
+        margin: 5px;
+        font-size: .45em;
+    }
+
+    .footer-contacts{
+        .contact-icon{
+            margin: 30px 20px 50px 20px;
+        }
+    }
+
 }
