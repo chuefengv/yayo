@@ -1,13 +1,23 @@
 export const projects=[
-    {"image":'thumbnail5.jpg',
+    {"title":"GOT U ON",
+     "artist":"DARCI",
+     "image":'thumbnail5.jpg',
      "video_id":"576223832?h=7d01ea0e34"},
-     {"image":'thumbnail4.jpeg',
+    {"title":"WAY IT GOES",
+     "artist":"JUSTIN STARLING",
+     "image":'thumbnail4.png',
      "video_id":"404132260?h=ff91433679"},
-     {"image":'thumbnail3.jpeg',
+    {"title":"FORGOT",
+     "artist":"TREVOR DANIEL",
+     "image":'thumbnail3.jpeg',
      "video_id":""},
-     {"image":'thumbnail2.png',
+    {"title":"LIFE",
+     "artist":"DARCI",
+     "image":'thumbnail2.png',
      "video_id":"296348851?h=a36344b055"},
-     {"image":'thumbnail1.png',
+    {"title":"WINTER'S SONG",
+     "artist":"LOST CHILDREN",
+     "image":'thumbnail1.png',
      "video_id":"_RexlsEsic4"}
 ]
 

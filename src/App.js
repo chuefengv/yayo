@@ -41,8 +41,13 @@ function App() {
         <div className='thumb-container'>
           {projects.map((video)=>{
             return(
-              <div key={video.video_id}>
-                <img src={require('./assets/'+video.image)} alt='music video thumbnail' onClick={()=>openPlayer(video.video_id)} ></img>
+              <div key={video.video_id} className='thumb-video-container' onClick={()=>openPlayer(video.video_id)}>
+                <img src={require('./assets/'+video.image)} alt='music video thumbnail'></img>
+                <div className='thumb-video-transparent'></div>
+                <div className='thumb-video-text'>
+                  <p id='artist'>{video.artist}</p>
+                  <p id='song-title'>"{video.title}"</p>
+                </div>
               </div>
             )
           })}
