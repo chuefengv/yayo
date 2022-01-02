@@ -1,7 +1,14 @@
 import './App.css';
 import sizzle from './assets/sizzle.mp4'
+import React,{useState} from 'react'
+import ReactDOM from 'react-dom'
+import ModalVideo from 'react-modal-video'
+import './modal-video.css'
 
 function App() {
+
+  const [isOpen, setOpen] = useState(false)
+
   return (
     <div className="app-container">
 
@@ -18,11 +25,15 @@ function App() {
       </div>
 
       <div className='work-container'>
-        Work
+        work
       </div>
 
       <div className='footer-container'>
-        Footer
+      <React.Fragment>
+      <ModalVideo channel='youtube' autoplay isOpen={isOpen} videoId="L61p2uyiMSo" onClose={() => setOpen(false)} />
+
+      <button className="btn-primary" onClick={()=> setOpen(true)}>VIEW DEMO</button>
+      </React.Fragment>
       </div>
 
     </div>
