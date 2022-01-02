@@ -8,6 +8,15 @@ import {projects} from './Projects'
 function App() {
 
   const [isOpen, setOpen] = useState(false)
+  const [videoId, setVideoId] = useState(" ")
+  
+
+  function openPlayer(video_id){
+    setVideoId(video_id)
+    if(video_id){
+      setOpen(true)
+    }
+  }
 
   return (
     <div className="app-container">
@@ -31,13 +40,11 @@ function App() {
           {projects.map((video)=>{
             return(
               <div key={video.video_id}>
-                <img src={video.thumbnail} alt=''></img>
-                {video.video_id}
+                <img src={require('./assets/'+video.image)} alt='music video thumbnail' onClick={()=>openPlayer(video.video_id)} ></img>
               </div>
             )
           })}
-          {/* <button className="btn-primary" onClick={()=> setOpen(true)}>VIEW DEMO</button>
-          <ModalVideo channel='youtube' autoplay={true} isOpen={isOpen} videoId="_RexlsEsic4" onClose={() => setOpen(false)} /> */}
+          <ModalVideo channel={videoId==="_RexlsEsic4" ? "youtube" : "vimeo"} autoplay isOpen={isOpen} videoId={videoId} onClose={()=>setOpen(false)} />
         </div>
       </div>
 
