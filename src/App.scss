@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400&family=Press+Start+2P&display=swap');
+
 .app-container{
     display: grid;
+    font-family: 'Dosis', sans-serif;
 }
 
 .video-container{
@@ -29,5 +32,21 @@
         right: 0;
         text-align: center;
         color: white;
+        display: grid;
+        h1{
+            margin: 0;
+            font-size: 3em;
+        }
+        h4{
+            margin: 10px 0 20px 0;
+        }
+        h3{
+            margin: 0;
+            padding: 10px 20px 10px 20px;
+            background: white;
+            color: rgb(0, 0, 0);
+            justify-self: center;
+            cursor: pointer;
+        }
     }
 }

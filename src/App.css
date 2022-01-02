@@ -1,6 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400&family=Press+Start+2P&display=swap");
 .app-container {
   display: -ms-grid;
   display: grid;
+  font-family: 'Dosis', sans-serif;
 }
 
 .video-container {
@@ -33,5 +35,26 @@
   right: 0;
   text-align: center;
   color: white;
+  display: -ms-grid;
+  display: grid;
+}
+
+.video-container .video-text h1 {
+  margin: 0;
+  font-size: 3em;
+}
+
+.video-container .video-text h4 {
+  margin: 10px 0 20px 0;
+}
+
+.video-container .video-text h3 {
+  margin: 0;
+  padding: 10px 20px 10px 20px;
+  background: white;
+  color: black;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  cursor: pointer;
 }
 /*# sourceMappingURL=App.css.map */

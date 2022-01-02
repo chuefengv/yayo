@@ -13,7 +13,7 @@ function App() {
         <div className='video-text'>
           <h1>YAYO VANG</h1>
           <h4>DIRECTER OF PHOTOGRAPHY</h4>
-          <h3>ENTER HERE</h3>
+          <h3>ENTER</h3>
         </div>
       </div>
 
