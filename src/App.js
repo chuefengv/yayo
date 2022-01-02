@@ -1,9 +1,9 @@
 import './App.css';
 import sizzle from './assets/sizzle.mp4'
 import React,{useState} from 'react'
-import ReactDOM from 'react-dom'
 import ModalVideo from 'react-modal-video'
 import './modal-video.css'
+import {projects} from './Projects'
 
 function App() {
 
@@ -24,18 +24,26 @@ function App() {
         </div>
       </div>
 
-      <div className='work-container'>
-        work
+      <div className='projects-container'>
+        WORK
+
+        <div className='thumb-container'>
+          {projects.map((video)=>{
+            return(
+              <div key={video.video_id}>
+                <img src={video.thumbnail} alt=''></img>
+                {video.video_id}
+              </div>
+            )
+          })}
+          {/* <button className="btn-primary" onClick={()=> setOpen(true)}>VIEW DEMO</button>
+          <ModalVideo channel='youtube' autoplay={true} isOpen={isOpen} videoId="_RexlsEsic4" onClose={() => setOpen(false)} /> */}
+        </div>
       </div>
 
       <div className='footer-container'>
-      <React.Fragment>
-      <ModalVideo channel='youtube' autoplay isOpen={isOpen} videoId="L61p2uyiMSo" onClose={() => setOpen(false)} />
-
-      <button className="btn-primary" onClick={()=> setOpen(true)}>VIEW DEMO</button>
-      </React.Fragment>
+        footers
       </div>
-
     </div>
   );
 }
