@@ -9,6 +9,8 @@ function App() {
 
   const [isOpen, setOpen] = useState(false)
   const [videoId, setVideoId] = useState(" ")
+
+
   
 
   function openPlayer(video_id){
@@ -29,12 +31,14 @@ function App() {
         <div className='video-text'>
           <h1>YAYO VANG</h1>
           <h4>DIRECTER OF PHOTOGRAPHY</h4>
-          <h3>ENTER</h3>
+          <h3> 
+            <a href='#projects'>SEE MORE</a>
+          </h3>
         </div>
       </div>
 
-      <div className='projects-container'>
-        WORK
+      <div className='projects-container' id='projects'>
+        <h1>WORK</h1>
 
         <div className='thumb-container'>
           {projects.map((video)=>{
