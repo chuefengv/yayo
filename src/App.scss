@@ -1,0 +1,13 @@
+.app-wrapper{
+    position: relative;
+}
+.video-wrapper{
+    video{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        object-fit: cover;
+    }
+}
