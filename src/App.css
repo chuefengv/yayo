@@ -121,7 +121,7 @@ body p {
 }
 
 .projects-container .thumb-container .thumb-video-container .thumb-video-text #song-title {
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 .footer-container {
@@ -131,7 +131,7 @@ body p {
 }
 
 .footer-container h4 {
-  margin: 40px 0 20px 0;
+  margin: 20px 0 20px 0;
 }
 
 .footer-container p {
@@ -140,7 +140,7 @@ body p {
 }
 
 .footer-container .footer-contacts {
-  margin: 30px;
+  margin: 20px;
 }
 
 .footer-container .footer-contacts a {
@@ -149,5 +149,11 @@ body p {
 
 .footer-container .footer-contacts a .contact-icon {
   margin: 0;
+}
+
+@media only screen and (min-width: 900px) {
+  body {
+    background-color: blue;
+  }
 }
 /*# sourceMappingURL=App.css.map */

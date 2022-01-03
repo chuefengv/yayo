@@ -1,7 +1,7 @@
 export const projects=[
     {"title":"GOT U ON",
-     "artist":"DARCI",
-     "image":'thumbnail5.jpg',
+     "artist":"DARCI ft. NESSLY",
+     "image":'thumbnail5.1.jpg',
      "video_id":"576223832?h=7d01ea0e34"},
     {"title":"WAY IT GOES",
      "artist":"JUSTIN STARLING",
@@ -9,7 +9,7 @@ export const projects=[
      "video_id":"404132260?h=ff91433679"},
     {"title":"FORGOT",
      "artist":"TREVOR DANIEL",
-     "image":'thumbnail3.jpeg',
+     "image":'thumbnail3.png',
      "video_id":""},
     {"title":"LIFE",
      "artist":"DARCI",

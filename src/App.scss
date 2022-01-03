@@ -108,7 +108,7 @@ body{
                     font-weight: 700;
                 }
                 #song-title{
-                    font-size: 2em;
+                    font-size: 1.5em;
                 }
             }
         }
@@ -120,7 +120,7 @@ body{
     text-align: center;
     font-size: 2em;
     h4{
-        margin: 40px 0 20px 0;
+        margin: 20px 0 20px 0;
     }
     p{
         margin: 5px;
@@ -128,7 +128,7 @@ body{
     }
 
     .footer-contacts{
-        margin: 30px;
+        margin: 20px;
         a{
             margin: 0 15px 0 15px;
             .contact-icon{
@@ -138,4 +138,10 @@ body{
 
     }
 
+}
+
+@media only screen and (min-width: 900px) {
+   body{
+       background-color: blue;
+   }
 }
