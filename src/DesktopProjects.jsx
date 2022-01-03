@@ -20,7 +20,7 @@ export default function DesktopProjects({setVideoId,setOpen}) {
                     </div>
 
                     <div className='thumb-gallery-video' onClick={()=>openPlayer(video.video_id)}>
-                        <img src={require('./assets/'+video.image)} alt='music video thumbnail'></img>
+                        <img src={require('./assets/'+video.image)} alt='music video thumbnail' ></img>
                         <div className='thumb-video-text'>
                             <p id='artist'>{video.artist}</p>
                             <p id='song-title'>"{video.title}"</p>

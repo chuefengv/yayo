@@ -10,7 +10,7 @@ export const projects=[
      "artist":"JUSTIN STARLING",
      "image":'thumbnail4.png',
      "video_id":"404132260?h=ff91433679",
-     "gallery_one":"thumbnail4.1.jpeg",
+     "gallery_one":"thumbnail4.1.png",
      "gallery_two":"thumbnail4.2.png"},
 
     {"title":"FORGOT",
@@ -24,7 +24,7 @@ export const projects=[
      "artist":"DARCI",
      "image":'thumbnail2.png',
      "video_id":"296348851?h=a36344b055",
-     "gallery_one":"thumbnail2.1.jpg",
+     "gallery_one":"thumbnail2.1.png",
      "gallery_two":"thumbnail2.2.jpg"},
 
     {"title":"WINTER'S SONG",

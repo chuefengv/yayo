@@ -80,13 +80,12 @@ body p {
 .projects-container h1 {
   color: gainsboro;
   text-align: center;
-  padding: 70px 0 20px 0;
+  padding: 2px 0 0 0;
 }
 
 .projects-container .thumb-container .thumb-video-container {
   position: relative;
-  cursor: pointer;
-  margin: 20px 0 20px 0;
+  margin: 10px 0 10px 0;
 }
 
 .projects-container .thumb-container .thumb-video-container img {
@@ -95,6 +94,10 @@ body p {
   min-height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.projects-container .thumb-container .thumb-video-container .thumb-gallery-video {
+  cursor: pointer;
 }
 
 .projects-container .thumb-container .thumb-video-container .thumb-video-transparent {
@@ -112,10 +115,15 @@ body p {
   top: 20%;
   left: 0;
   right: 0;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
-  color: white;
+  color: #f0f0f0;
   font-weight: 400;
-  text-shadow: 1px 1px #000000;
+  text-shadow: 1px 1px #303030;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .projects-container .thumb-container .thumb-video-container .thumb-video-text #artist {
@@ -160,6 +168,10 @@ body p {
     display: grid;
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
+    cursor: default;
+  }
+  .thumb-video-container .thumb-gallery-video {
+    z-index: 30;
   }
 }
 /*# sourceMappingURL=App.css.map */

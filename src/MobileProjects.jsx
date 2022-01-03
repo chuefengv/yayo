@@ -14,11 +14,13 @@ export default function MobileProjects({setVideoId,setOpen}) {
           {projects.map((video)=>{
             return(
               <div key={video.video_id} className='thumb-video-container' onClick={()=>openPlayer(video.video_id)}>
-                <img src={require('./assets/'+video.image)} alt='music video thumbnail'></img>
-                <div className='thumb-video-text'>
-                  <p id='artist'>{video.artist}</p>
-                  <p id='song-title'>"{video.title}"</p>
-                </div>
+                    <div className='thumb-gallery-video'>
+                        <img src={require('./assets/'+video.image)} alt='music video thumbnail' ></img>
+                        <div className='thumb-video-text'>
+                            <p id='artist'>{video.artist}</p>
+                            <p id='song-title'>"{video.title}"</p>
+                        </div>
+                    </div>
               </div>
             )
           })}

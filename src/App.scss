@@ -71,18 +71,21 @@ body{
     h1{
         color: rgb(220, 220, 220);
         text-align: center;
-        padding: 70px 0 20px 0;
+        padding: 2px 0 0 0;
     }
     .thumb-container{
         .thumb-video-container{
             position: relative;
-            cursor: pointer;
-            margin: 20px 0 20px 0;
+            margin: 10px 0 10px 0;
             img{
                 max-width: 100%;
                 width: 100%;
                 min-height: 100%;
                 object-fit: cover;
+            }
+
+            .thumb-gallery-video{
+                cursor: pointer;
             }
 
             .thumb-video-transparent{
@@ -100,10 +103,13 @@ body{
                 top: 20%;
                 left: 0;
                 right: 0;
+                margin-left: auto;
+                margin-right: auto;
                 text-align: center;
-                color: white;
+                color: rgb(240, 240, 240);
                 font-weight: 400;
-                text-shadow: 1px 1px #000000;    
+                text-shadow: 1px 1px #303030;
+                width: fit-content;  
                 #artist{
                     font-size: 2em;
                     font-weight: 700;
@@ -146,6 +152,11 @@ body{
     .thumb-video-container{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr; 
+        cursor: default;
+
+        .thumb-gallery-video{
+            z-index: 30;
+        }
     }
 
 }
