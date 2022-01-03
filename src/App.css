@@ -78,7 +78,7 @@ body p {
 }
 
 .projects-container h1 {
-  color: white;
+  color: gainsboro;
   text-align: center;
   padding: 70px 0 20px 0;
 }
@@ -86,12 +86,15 @@ body p {
 .projects-container .thumb-container .thumb-video-container {
   position: relative;
   cursor: pointer;
+  margin: 20px 0 20px 0;
 }
 
 .projects-container .thumb-container .thumb-video-container img {
-  z-index: -1;
+  max-width: 100%;
   width: 100%;
-  margin: 10px 0 10px 0;
+  min-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .projects-container .thumb-container .thumb-video-container .thumb-video-transparent {
@@ -152,8 +155,11 @@ body p {
 }
 
 @media only screen and (min-width: 900px) {
-  body {
-    background-color: blue;
+  .thumb-video-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
   }
 }
 /*# sourceMappingURL=App.css.map */
