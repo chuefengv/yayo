@@ -6,6 +6,7 @@ import './modal-video.css'
 import { Icon } from '@iconify/react';
 import MobileProjects from './MobileProjects';
 import DesktopProjects from './DesktopProjects';
+import DesktopVideo from './DesktopVideo';
 
 function App() {
 
@@ -15,7 +16,7 @@ function App() {
 
   function scrollDown(){
     var projects = document.getElementById("projects")
-    projects.scrollIntoView()
+    projects.scrollIntoView({behavior:'smooth'})
   }
 
   useEffect(()=>{
@@ -29,9 +30,10 @@ function App() {
     <div className="app-container">
 
       <div className='video-container'>
-        <video className='videoTag' autoPlay loop muted>
+        {/* <video className='videoTag' autoPlay loop muted>
             <source src={sizzle} type='video/mp4' />
-        </video>
+        </video> */}
+        <DesktopVideo />
         <div className='video-transparent-layer'></div>
         <div className='video-text'>
           <h1>YAYO VANG</h1>
@@ -41,6 +43,7 @@ function App() {
           </h3>
         </div>
       </div>
+
 
       <div className='projects-container' id='projects'>
         <h1>WORK</h1>

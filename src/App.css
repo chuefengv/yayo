@@ -29,9 +29,25 @@ body p {
   position: relative;
 }
 
-.video-container video {
+.video-container .videoTag {
   z-index: -1;
   height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.video-container .carousel-container {
+  min-height: 100vh;
+  height: 100%;
+}
+
+.video-container .carousel-container div {
+  min-height: 100vh;
+}
+
+.video-container .carousel-container div img {
+  min-height: 100vh;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;

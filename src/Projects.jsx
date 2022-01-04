@@ -17,8 +17,8 @@ export const projects=[
      "artist":"TREVOR DANIEL",
      "image":'thumbnail3.png',
      "video_id":"",
-     "gallery_one":"thumbnail3.1.png",
-     "gallery_two":"thumbnail3.2.png"},
+     "gallery_one":"thumbnail3.1.jpg",
+     "gallery_two":"thumbnail3.2.jpg"},
 
     {"title":"LIFE",
      "artist":"DARCI",

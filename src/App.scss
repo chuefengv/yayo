@@ -23,11 +23,29 @@ body{
 .video-container{
     height: 100vh;
     position: relative;
-    video{
+    .videoTag{
         z-index: -1;
         height: 100%;
         width: 100%;
         object-fit: cover;
+
+    }
+
+    .carousel-container{
+
+        min-height: 100vh;
+        height: 100%;
+        
+        div{
+            min-height: 100vh;
+
+            img{
+                min-height: 100vh;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+        
     }
 
     .video-transparent-layer{
