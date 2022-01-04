@@ -13,6 +13,10 @@ function App() {
   const [videoId, setVideoId] = useState(" ")
   const [deskMode, setDeskMode] = useState((window.innerWidth>=900) ? true : false);
 
+  function scrollDown(){
+    var projects = document.getElementById("projects")
+    projects.scrollIntoView()
+  }
 
   useEffect(()=>{
     function renderFeed(){
@@ -32,8 +36,8 @@ function App() {
         <div className='video-text'>
           <h1>YAYO VANG</h1>
           <h4>DIRECTOR OF PHOTOGRAPHY</h4>
-          <h3> 
-            <a href='#projects'>SEE MORE</a>
+          <h3 onClick={()=>scrollDown()}> 
+            SEE MORE
           </h3>
         </div>
       </div>
