@@ -31,7 +31,7 @@ function App() {
         <div className='video-transparent-layer'></div>
         <div className='video-text'>
           <h1>YAYO VANG</h1>
-          <h4>DIRECTER OF PHOTOGRAPHY</h4>
+          <h4>DIRECTOR OF PHOTOGRAPHY</h4>
           <h3> 
             <a href='#projects'>SEE MORE</a>
           </h3>
