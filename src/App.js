@@ -24,16 +24,18 @@ function App() {
         window.innerWidth>=900 ? setDeskMode(true) : setDeskMode(false)
     }
     window.addEventListener('resize',renderFeed)
-  },[])
+  })
 
   return (
     <div className="app-container">
 
       <div className='video-container'>
-        {/* <video className='videoTag' autoPlay loop muted>
+        {!deskMode?
+          <DesktopVideo />:
+          <video className='videoTag' autoPlay loop muted>
             <source src={sizzle} type='video/mp4' />
-        </video> */}
-        <DesktopVideo />
+          </video>
+        }
         <div className='video-transparent-layer'></div>
         <div className='video-text'>
           <h1>YAYO VANG</h1>
