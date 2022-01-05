@@ -195,7 +195,7 @@ body p {
   margin: 0;
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 800px) {
   .thumb-video-container {
     opacity: 1;
     -webkit-animation-name: fadeInOpacity;
