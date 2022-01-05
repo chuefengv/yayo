@@ -41,6 +41,8 @@ body p {
   z-index: 4;
   min-height: 100vh;
   height: 100%;
+  -ms-touch-action: none;
+      touch-action: none;
 }
 
 .video-container .carousel-container div {
