@@ -41,8 +41,6 @@ body p {
   z-index: 4;
   min-height: 100vh;
   height: 100%;
-  -ms-touch-action: none;
-      touch-action: none;
 }
 
 .video-container .carousel-container div {
@@ -54,16 +52,6 @@ body p {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.video-container .video-transparent-layer {
-  z-index: 1;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  background-color: rgba(0, 0, 0, 0.055);
-  border: solid blue;
 }
 
 .video-container .video-text {
@@ -103,19 +91,6 @@ body p {
   -ms-grid-column-align: center;
       justify-self: center;
   cursor: pointer;
-}
-
-.video-container .video-swipe-border {
-  position: absolute;
-  z-index: 6;
-  top: 0;
-  right: 0;
-  left: 0;
-  margin-left: auto;
-  margin-right: auto;
-  width: 25vw;
-  height: 100vh;
-  border: solid green;
 }
 
 .projects-container h1 {
