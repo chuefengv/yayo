@@ -2,14 +2,14 @@ import React from 'react'
 import './App.css';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import img1 from './assets/thumbnail2.1.png'
-import img2 from './assets/thumbnail2.2.jpg'
-import img3 from './assets/thumbnail3.1.jpg'
-import img4 from './assets/thumbnail3.2.jpg'
-import img5 from './assets/thumbnail4.1.png'
-import img6 from './assets/thumbnail4.2.png'
-import img7 from './assets/thumbnail5.jpg'
-import img8 from './assets/thumbnail5.2.jpg'
+import img1 from './assets/thumbnail2.1.webp'
+import img2 from './assets/thumbnail2.2.webp'
+import img3 from './assets/thumbnail3.1.webp'
+import img4 from './assets/thumbnail3.2.webp'
+import img5 from './assets/thumbnail4.1.webp'
+import img6 from './assets/thumbnail4.2.webp'
+import img7 from './assets/thumbnail5.webp'
+import img8 from './assets/thumbnail5.2.webp'
 
 export default function MobileVideo() {
     return (
