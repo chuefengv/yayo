@@ -5,6 +5,8 @@ html {
 }
 
 body {
+  -ms-touch-action: pan-y;
+      touch-action: pan-y;
   background-color: black;
 }
 
@@ -41,8 +43,6 @@ body p {
   z-index: 4;
   min-height: 100vh;
   height: 100%;
-  -ms-touch-action: pan-y;
-      touch-action: pan-y;
 }
 
 .video-container .carousel-container div {

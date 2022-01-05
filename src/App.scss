@@ -6,6 +6,7 @@ html{
 }
 
 body{
+    touch-action: pan-y;
     background-color: black;
     a{
         text-decoration: none;
@@ -35,7 +36,6 @@ body{
         z-index: 4;
         min-height: 100vh;
         height: 100%;
-        touch-action: pan-y;
         div{
             min-height: 100vh;
 
