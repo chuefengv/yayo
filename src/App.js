@@ -36,7 +36,7 @@ function App() {
             <source src={sizzle} type='video/mp4' />
           </video>
         }
-        <div className='video-transparent-layer'></div>
+        {/* <div className='video-transparent-layer'></div> */}
         <div className='video-text'>
           <h1>YAYO VANG</h1>
           <h4>DIRECTOR OF PHOTOGRAPHY</h4>

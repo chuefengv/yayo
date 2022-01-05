@@ -38,6 +38,7 @@ body p {
 }
 
 .video-container .carousel-container {
+  z-index: 4;
   min-height: 100vh;
   height: 100%;
 }
@@ -60,6 +61,7 @@ body p {
   height: 100%;
   top: 0;
   background-color: rgba(0, 0, 0, 0.055);
+  border: solid blue;
 }
 
 .video-container .video-text {
@@ -68,6 +70,11 @@ body p {
   top: 40%;
   left: 0;
   right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   text-align: center;
   color: white;
   display: -ms-grid;
@@ -77,10 +84,12 @@ body p {
 .video-container .video-text h1 {
   margin: 0;
   font-size: 3em;
+  text-shadow: 1px 1px #303030;
 }
 
 .video-container .video-text h4 {
   margin: 10px 0 20px 0;
+  text-shadow: 1px 1px #303030;
 }
 
 .video-container .video-text h3 {
@@ -114,15 +123,6 @@ body p {
 
 .projects-container .thumb-container .thumb-video-container .thumb-gallery-video {
   cursor: pointer;
-}
-
-.projects-container .thumb-container .thumb-video-container .thumb-video-transparent {
-  z-index: 1;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  background-color: rgba(0, 0, 0, 0.25);
 }
 
 .projects-container .thumb-container .thumb-video-container .thumb-video-text {

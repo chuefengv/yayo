@@ -32,7 +32,7 @@ body{
     }
 
     .carousel-container{
-
+        z-index: 4;
         min-height: 100vh;
         height: 100%;
         
@@ -55,6 +55,7 @@ body{
         height: 100%;
         top: 0;
         background-color: rgba(0, 0, 0, 0.055);
+        border: solid blue;
     }
 
     .video-text{
@@ -63,15 +64,20 @@ body{
         top:40%;
         left: 0;
         right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: fit-content;
         text-align: center;
         color: white;
         display: grid;
         h1{
             margin: 0;
             font-size: 3em;
+            text-shadow: 1px 1px #303030;
         }
         h4{
             margin: 10px 0 20px 0;
+            text-shadow: 1px 1px #303030;
         }
         h3{
             margin: 0;
@@ -100,19 +106,11 @@ body{
                 width: 100%;
                 min-height: 100%;
                 object-fit: cover;
+
             }
 
             .thumb-gallery-video{
                 cursor: pointer;
-            }
-
-            .thumb-video-transparent{
-                z-index: 1;
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                top: 0;
-                background-color: rgba(0, 0, 0, 0.25);
             }
 
             .thumb-video-text{
