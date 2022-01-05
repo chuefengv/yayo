@@ -69,7 +69,6 @@ body p {
   color: white;
   display: -ms-grid;
   display: grid;
-  border: solid red;
 }
 
 .video-container .video-text h1 {
