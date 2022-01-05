@@ -21,14 +21,15 @@ body{
     font-family: 'Lato', sans-serif;}
 
 .video-container{
+
     height: 100vh;
     position: relative;
+
     .videoTag{
         z-index: -1;
         height: 100%;
         width: 100%;
         object-fit: cover;
-
     }
 
     .carousel-container{
@@ -62,19 +63,17 @@ body{
     .video-text{
         z-index: 2;
         position: absolute;
-        top:0;
+        top:40%;
         left: 0;
         right: 0;
         margin-left: auto;
         margin-right: auto;
         width: fit-content;
-        min-height: 100vh;
         text-align: center;
         color: white;
         display: grid;
-        grid-template-rows: 1fr auto 1fr;
+        border: solid red;
         h1{
-            align-self: end;
             margin: 0;
             font-size: 3em;
             text-shadow: 1px 1px #303030;
@@ -90,8 +89,19 @@ body{
             color: rgb(0, 0, 0);
             justify-self: center;
             cursor: pointer;
-            align-self: start;
         }
+    }
+    .video-swipe-border{
+        position: absolute;
+        z-index: 6;
+        top: 0;
+        right: 0;
+        left: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 25vw;
+        height: 100vh;
+        border: solid green;
     }
 }
 

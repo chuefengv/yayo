@@ -46,6 +46,8 @@ function App() {
           </h3>
         </div>
 
+        <div className='video-swipe-border'>hi</div>
+
       </div>
 
 
