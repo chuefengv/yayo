@@ -35,7 +35,7 @@ body{
         z-index: 4;
         min-height: 100vh;
         height: 100%;
-        
+        touch-action: pan-y;
         div{
             min-height: 100vh;
 
