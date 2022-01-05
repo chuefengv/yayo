@@ -84,7 +84,6 @@ body p {
   display: grid;
   -ms-grid-rows: 1fr auto 1fr;
       grid-template-rows: 1fr auto 1fr;
-  border: solid red;
 }
 
 .video-container .video-text h1 {
