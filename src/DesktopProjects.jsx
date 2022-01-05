@@ -1,6 +1,7 @@
 import React from 'react'
 import './App.css'
 import {projects} from './Projects'
+import LazyLoad from 'react-lazyload';
 
 export default function DesktopProjects({setVideoId,setOpen}) {
     function openPlayer(video_id){
@@ -11,6 +12,7 @@ export default function DesktopProjects({setVideoId,setOpen}) {
     }
     return (
         <div>
+            <LazyLoad>
             {projects.map((video)=>{
                 return(
                 <div key={video.video_id} className='thumb-video-container'>
@@ -34,6 +36,7 @@ export default function DesktopProjects({setVideoId,setOpen}) {
                 </div>
                 )
             })}
+            </LazyLoad>
         </div>
     )
 }
