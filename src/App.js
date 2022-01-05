@@ -6,7 +6,7 @@ import './modal-video.css'
 import { Icon } from '@iconify/react';
 import MobileProjects from './MobileProjects';
 import DesktopProjects from './DesktopProjects';
-import DesktopVideo from './DesktopVideo';
+import MobileVideo from './MobileVideo';
 
 function App() {
 
@@ -30,13 +30,14 @@ function App() {
     <div className="app-container">
 
       <div className='video-container'>
-        {!deskMode?
-          <DesktopVideo />:
+
+        {deskMode?
           <video className='videoTag' autoPlay loop muted>
             <source src={sizzle} type='video/mp4' />
-          </video>
-        }
-        {/* <div className='video-transparent-layer'></div> */}
+          </video>:
+          <MobileVideo />
+        }      
+
         <div className='video-text'>
           <h1>YAYO VANG</h1>
           <h4>DIRECTOR OF PHOTOGRAPHY</h4>
@@ -44,6 +45,7 @@ function App() {
             SEE MORE
           </h3>
         </div>
+
       </div>
 
 

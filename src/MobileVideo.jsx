@@ -11,34 +11,34 @@ import img6 from './assets/thumbnail4.2.png'
 import img7 from './assets/thumbnail5.jpg'
 import img8 from './assets/thumbnail5.2.jpg'
 
-export default function DesktopVideo() {
+export default function MobileVideo() {
     return (
         <div className='carousel-container'>
             <Carousel axis='horizontal' autoPlay='true' infiniteLoop='true' interval='4000' showArrows={false} showIndicators={true} showThumbs={false} showStatus={false} swipeable={true} emulateTouch={true} swipeScrollTolerance={15}>
-            <div>
-                <img src={img2} alt=''></img>
-            </div>
-            <div>
-                <img src={img7} alt=''></img>
-            </div>
-            <div>
-                <img src={img4} alt=''></img>
-            </div>
-            <div>
-                <img src={img6} alt=''></img>
-            </div>
-            <div>
-                <img src={img1} alt=''></img>
-            </div>
-            <div>
-                <img src={img3} alt=''></img>
-            </div>
-            <div>
-                <img src={img8} alt=''></img>
-            </div>
-            <div>
-                <img src={img5} alt=''></img>
-            </div>
+                <div>
+                    <img src={img2} alt=''></img>
+                </div>
+                <div>
+                    <img src={img7} alt=''></img>
+                </div>
+                <div>
+                    <img src={img4} alt=''></img>
+                </div>
+                <div>
+                    <img src={img6} alt=''></img>
+                </div>
+                <div>
+                    <img src={img1} alt=''></img>
+                </div>
+                <div>
+                    <img src={img3} alt=''></img>
+                </div>
+                <div>
+                    <img src={img8} alt=''></img>
+                </div>
+                <div>
+                    <img src={img5} alt=''></img>
+                </div>
             </Carousel>
         </div>
     )

@@ -5,8 +5,6 @@ html {
 }
 
 body {
-  -ms-touch-action: pan-y;
-      touch-action: pan-y;
   background-color: black;
 }
 
@@ -43,6 +41,8 @@ body p {
   z-index: 4;
   min-height: 100vh;
   height: 100%;
+  -ms-touch-action: none;
+      touch-action: none;
 }
 
 .video-container .carousel-container div {
@@ -69,7 +69,7 @@ body p {
 .video-container .video-text {
   z-index: 2;
   position: absolute;
-  top: 40%;
+  top: 0;
   left: 0;
   right: 0;
   margin-left: auto;
@@ -77,13 +77,20 @@ body p {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  min-height: 100vh;
   text-align: center;
   color: white;
   display: -ms-grid;
   display: grid;
+  -ms-grid-rows: 1fr auto 1fr;
+      grid-template-rows: 1fr auto 1fr;
+  border: solid red;
 }
 
 .video-container .video-text h1 {
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
   margin: 0;
   font-size: 3em;
   text-shadow: 1px 1px #303030;
@@ -102,6 +109,9 @@ body p {
   -ms-grid-column-align: center;
       justify-self: center;
   cursor: pointer;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
 }
 
 .projects-container h1 {
