@@ -12,7 +12,7 @@ function App() {
 
   const [isOpen, setOpen] = useState(false)
   const [videoId, setVideoId] = useState(" ")
-  const [deskMode, setDeskMode] = useState((window.innerWidth>=800) ? true : false);
+  const [deskMode, setDeskMode] = useState((window.innerWidth>=950) ? true : false);
 
   function scrollDown(){
     var projects = document.getElementById("projects")
@@ -21,7 +21,7 @@ function App() {
 
   useEffect(()=>{
     function renderFeed(){
-        window.innerWidth>=800 ? setDeskMode(true) : setDeskMode(false)
+        window.innerWidth>=950 ? setDeskMode(true) : setDeskMode(false)
     }
     window.addEventListener('resize',renderFeed)
   })
