@@ -26,6 +26,12 @@ body{
     position: relative;
 
     .videoTag{
+        opacity: 1;
+        animation-name: fadeInOpacity;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in;
+        animation-duration: .5s;
+        
         z-index: -1;
         height: 100%;
         width: 100%;
@@ -33,6 +39,12 @@ body{
     }
 
     .carousel-container{
+        opacity: 1;
+        animation-name: fadeInOpacity;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in;
+        animation-duration: .5s;
+
         z-index: 4;
         min-height: 100vh;
         height: 100%;
@@ -90,6 +102,11 @@ body{
     }
     .thumb-container{
         .thumb-video-container{
+            opacity: 1;
+            animation-name: fadeInOpacity;
+            animation-iteration-count: 1;
+            animation-timing-function: ease-in;
+            animation-duration: .5s;
             position: relative;
             margin: 10px 0 10px 0;
             img{
@@ -157,6 +174,11 @@ body{
 @media only screen and (min-width: 900px) {
 
     .thumb-video-container{
+        opacity: 1;
+        animation-name: fadeInOpacity;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in;
+        animation-duration: .5s;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr; 
         cursor: default;
@@ -166,4 +188,13 @@ body{
         }
     }
 
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
