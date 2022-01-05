@@ -126,7 +126,7 @@ body p {
 }
 
 .projects-container .thumb-container .thumb-video-container .thumb-video-text {
-  z-index: 4;
+  z-index: 2;
   position: absolute;
   top: 20%;
   left: 0;
@@ -187,7 +187,7 @@ body p {
     cursor: default;
   }
   .thumb-video-container .thumb-gallery-video {
-    z-index: 30;
+    z-index: 3;
   }
 }
 /*# sourceMappingURL=App.css.map */

@@ -116,7 +116,7 @@ body{
             }
 
             .thumb-video-text{
-                z-index: 4;
+                z-index: 2;
                 position: absolute;
                 top: 20%;
                 left: 0;
@@ -173,7 +173,7 @@ body{
         cursor: default;
 
         .thumb-gallery-video{
-            z-index: 30;
+            z-index: 3;
         }
     }
 
