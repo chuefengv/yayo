@@ -14,7 +14,7 @@ import img8 from './assets/thumbnail5.2.jpg'
 export default function MobileVideo() {
     return (
         <div className='carousel-container'>
-            <Carousel axis='horizontal' autoPlay='true' infiniteLoop='true' interval='4000' showArrows={false} showIndicators={true} showThumbs={false} showStatus={false} swipeable={true} emulateTouch={true} swipeScrollTolerance={15}>
+            <Carousel axis='horizontal' autoPlay='true' infiniteLoop='true' interval='4000' showArrows={false} showIndicators={true} showThumbs={false} showStatus={false} swipeable={true} emulateTouch={true} swipeScrollTolerance={100} preventMovementUntilSwipeScrollTolerance={true}>
                 <div>
                     <img src={img2} alt=''></img>
                 </div>
