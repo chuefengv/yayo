@@ -18,11 +18,11 @@ export default function DesktopProjects({setVideoId,setOpen}) {
                 <div key={video.video_id} className='thumb-video-container'>
                     
                     <div className='thumb-gallery-photo'>
-                        <img src={require('./assets/'+video.gallery_one)} alt='music video gallery one'></img>
+                        <img src={video.gallery_one} alt='music video gallery one'></img>
                     </div>
 
                     <div className='thumb-gallery-video' onClick={()=>openPlayer(video.video_id)}>
-                        <img src={require('./assets/'+video.image)} alt='music video thumbnail' ></img>
+                        <img src={video.image} alt='music video thumbnail' ></img>
                         <div className='thumb-video-text'>
                             <p id='artist'>{video.artist}</p>
                             <p id='song-title'>"{video.title}"</p>
@@ -30,7 +30,7 @@ export default function DesktopProjects({setVideoId,setOpen}) {
                     </div>
 
                     <div className='thumb-gallery-photo'>
-                        <img src={require('./assets/'+video.gallery_two)} alt='music video gallery two'></img>
+                        <img src={video.gallery_two} alt='music video gallery two'></img>
                     </div>
 
                 </div>

@@ -17,7 +17,7 @@ export default function MobileProjects({setVideoId,setOpen}) {
               return(
                 <div key={video.video_id} className='thumb-video-container' onClick={()=>openPlayer(video.video_id)}>
                       <div className='thumb-gallery-video'>
-                          <img src={require('./assets/'+video.image)} alt='music video thumbnail' ></img>
+                          <img src={video.image} alt='music video thumbnail' ></img>
                           <div className='thumb-video-text'>
                               <p id='artist'>{video.artist}</p>
                               <p id='song-title'>"{video.title}"</p>
