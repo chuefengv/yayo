@@ -66,7 +66,7 @@ body p {
 }
 
 .video-container .carousel-container div img {
-  min-height: 100vh;
+  height: 100vh;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;

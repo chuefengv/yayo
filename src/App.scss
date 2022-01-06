@@ -44,15 +44,14 @@ body{
         animation-iteration-count: 1;
         animation-timing-function: ease-in;
         animation-duration: .5s;
-
         z-index: 4;
         min-height: 100vh;
         height: 100%;
         div{
             min-height: 100vh;
-
+            // border: solid green;
             img{
-                min-height: 100vh;
+                height: 100vh;
                 width: 100%;
                 object-fit: cover;
             }
