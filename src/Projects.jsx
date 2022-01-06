@@ -49,5 +49,6 @@ export const projects=[
      "video_id":"_RexlsEsic4",
      "gallery_one":thumb1_1,
      "gallery_two":thumb1_2},
+
 ]
 

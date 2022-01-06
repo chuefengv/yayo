@@ -13,7 +13,7 @@ function App() {
   const [isOpen, setOpen] = useState(false)
   const [videoId, setVideoId] = useState(" ")
   const [deskMode, setDeskMode] = useState((window.innerWidth>=950) ? true : false);
-
+  const [loading, setLoading] = useState(true)
   function scrollDown(){
     var projects = document.getElementById("projects")
     projects.scrollIntoView({behavior:'smooth'})
@@ -54,8 +54,9 @@ function App() {
 
         <div className='thumb-container'>
 
-          {deskMode?<DesktopProjects setVideoId={setVideoId} setOpen={setOpen}/>:<MobileProjects setVideoId={setVideoId} setOpen={setOpen}/>}
 
+          {deskMode?<DesktopProjects setVideoId={setVideoId} setOpen={setOpen} loading={loading} setLoading={setLoading}/>:<MobileProjects setVideoId={setVideoId} setOpen={setOpen} loading={loading} setLoading={setLoading}/>}
+          
           <ModalVideo channel={videoId==="_RexlsEsic4" ? "youtube" : "vimeo"} autoplay isOpen={isOpen} videoId={videoId} onClose={()=>setOpen(false)} />
         
         </div>
