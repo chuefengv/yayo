@@ -14,6 +14,7 @@ function App() {
   const [videoId, setVideoId] = useState(" ")
   const [deskMode, setDeskMode] = useState((window.innerWidth>=950) ? true : false);
   const [loading, setLoading] = useState(true)
+
   function scrollDown(){
     var projects = document.getElementById("projects")
     projects.scrollIntoView({behavior:'smooth'})
@@ -35,7 +36,7 @@ function App() {
           <video className='videoTag' autoPlay loop muted>
             <source src={sizzle} type='video/mp4' />
           </video>:
-          <MobileVideo />
+          <MobileVideo/>
         }      
 
         <div className='video-text'>
@@ -44,6 +45,7 @@ function App() {
           <h3 onClick={()=>scrollDown()}> 
             SEE MORE
           </h3>
+
         </div>
 
       </div>
