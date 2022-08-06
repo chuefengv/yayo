@@ -72,7 +72,7 @@ function App() {
           <a href='https://www.instagram.com/yayovang/'>
             <Icon icon="akar-icons:instagram-fill" className='contact-icon'/>
           </a>
-          <a href='mailto:yayo.vang@gmail.com'>
+          <a href='mailto:contact@yayovang.com'>
             <Icon icon="fontisto:email" className='contact-icon'/>
           </a>
         </div>
