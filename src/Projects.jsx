@@ -13,8 +13,27 @@ import thumb4_2 from './assets/thumbnail4.2.webp'
 import thumb5 from './assets/thumbnail5.webp'
 import thumb5_1 from './assets/thumbnail5.1.webp'
 import thumb5_2 from './assets/thumbnail5.2.webp'
-
+import thumb6 from './assets/thumbnail6.webp'
+import thumb6_1 from './assets/thumbnail6.1.webp'
+import thumb6_2 from './assets/thumbnail6.2.webp'
+import thumb7 from './assets/thumbnail7.webp'
+import thumb7_1 from './assets/thumbnail7.1.webp'
+import thumb7_2 from './assets/thumbnail7.2.webp'
 export const projects=[
+    {"title":"SURVIVE",
+    "artist":"JUSTIN STARLING",
+    "image":thumb7_1,
+    "video_id":"815120589",
+    "gallery_one":thumb7_2,
+    "gallery_two":thumb7},
+
+    {"title":"SECRETS, SWIPES, AND LIES",
+    "artist":"",
+    "image":thumb6_2,
+    "video_id":"793546626",
+    "gallery_one":thumb6,
+    "gallery_two":thumb6_1},
+
     {"title":"GOT U ON",
      "artist":"DARCI ft. NESSLY",
      "image":thumb5_1,
