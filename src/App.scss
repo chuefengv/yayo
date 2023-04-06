@@ -157,13 +157,14 @@ body{
                 margin-left: auto;
                 margin-right: auto;
                 text-align: center;
-                color: rgb(240, 240, 240);
+                color: rgb(245, 245, 245);
                 font-weight: 400;
-                text-shadow: 1px 1px #303030;
-                width: fit-content;  
+                text-shadow: 2px 2px #303030;
+                width: fit-content;
                 #artist{
                     font-size: 2em;
                     font-weight: 700;
+                    max-width: 300px;
                 }
                 #song-title{
                     font-size: 1.5em;

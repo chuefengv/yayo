@@ -31,7 +31,7 @@ export default function DesktopProjects({setVideoId,setOpen, loading, setLoading
                             <img src={video.image} alt='music video thumbnail'></img>
                             <div className='thumb-video-text'>
                                 <p id='artist'>{video.artist}</p>
-                                <p id='song-title'>"{video.title}"</p>
+                                <p id='song-title'>{video.title}</p>
                             </div>
                         </div>
 
